@@ -10,8 +10,12 @@ Sample assertions:
 assert largest([3,10,3]) == 10
 """
 
-def largest():
-    pass
-    return
+def largest(numlist):
+    numlist.sort()
+    biggest = numlist[-1]
+    return(biggest)
 
 assert largest([3,10,3]) == 10
+
+if __name__ == "__main__":
+    print(largest([10,50,100,3000.1]))

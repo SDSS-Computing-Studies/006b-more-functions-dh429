@@ -13,3 +13,15 @@ assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
 
+def convertTemp(temp, temptype):
+    if temptype == 'C':
+        newtemp = (temp * 1.8) + 32
+        return newtemp
+    
+    if temptype == 'F':
+        newtemp = (temp - 32) * .5556
+        return newtemp
+    
+if __name__ == "__main__":
+    print(convertTemp(10,'C'))
+    print(convertTemp(32,'F'))
